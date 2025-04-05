@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: "aside header"
+                         "aside main"
+                         "aside footer";
+}
+
+header{
+    height: 10vh;
+    background-color: brown;
+    grid-area: header;
+}
+
+aside{
+    height: 100vh;
+    background-color: rgb(146, 81, 81);
+    grid-area: aside;
+}
+
+main{
+    height: 80vh;
+    background-color: rgb(159, 137, 137);
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Item1 Item2 Item3 Item4"
+                         "Item5 Item2 Item6 Item6";
+}
+
+.itens-iguais{
+    width: 10vh;
+    height: 10vh;
+}
+
+.Item1{
+    grid-area: Item1;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.Item2{
+    grid-area: Item2;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.Item3{
+    grid-area: Item3;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.Item4{
+    grid-area: Item4;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.item{
+    grid-area: Item5;
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+.item6{
+    grid-area: Item6;
+    background-color: rgb(238, 182, 182);
+}
+
+footer{
+    height: 10vh;
+    background-color: rgb(171, 166, 166);
+    grid-area: footer;
+}
